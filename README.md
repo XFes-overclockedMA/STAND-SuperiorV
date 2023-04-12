@@ -19,10 +19,13 @@ Powered by : разогнанный = OverclockedMA / @разогнанный#90
 
 🚧🚧🚧🚧🚧🚧🚧🚧
 
-You are still looking for another iconic RGH theme, I posted the theme "Legacy Menu Beta"!! 🐍✅
+You are still looking for another iconic RGH theme : 🐍✅
 
 💎 Legacy menu beta Theme : 
 https://github.com/XFes-overclockedMA/STAND-Legacy-menu-beta
+
+💎 The Purge V3.9 Reforged :
+https://github.com/XFes-overclockedMA/STAND-ThePurgeReforged.git
 
 🚧🚧🚧🚧🚧🚧🚧🚧
 
