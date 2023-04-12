@@ -2,7 +2,6 @@
 This SuperiorV THEME for STAND
 
 ![logo](https://user-images.githubusercontent.com/130534944/231552107-257db78a-1d2d-49ba-bbc2-4f5dbf61ea7a.png)
-![Superiorband](https://user-images.githubusercontent.com/130534944/231552097-1248b8cc-93dd-48cc-ab67-0aafd60bd261.png)
 
 ⚠️⚠️THIS CODE IS OPEN SOURCE PROVIDED YOU ASK ME PERMISSION⚠️⚠️
 
@@ -46,3 +45,5 @@ Good game 😉🚀🎮
 
 Powered by : разогнанный = OverclockedMA / @разогнанный#9036 ✅ 
 💻 Demo : https://youtu.be/U7M8lwqxX5g
+
+![Superiorband](https://user-images.githubusercontent.com/130534944/231552097-1248b8cc-93dd-48cc-ab67-0aafd60bd261.png)
