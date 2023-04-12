@@ -30,11 +30,11 @@ I invite you to subscribe to my Youtube channel! 🔥🧨
 
 🚧🚧🚧🚧🚧🚧🚧🚧
 
-SPECIAL MENTION: @Beyond 5D For giving me the idea to redo iconic JTAG/RGH mod menu themes, thank you! 💪🔥
+SPECIAL MENTION: @Beyond 5D For giving me the idea to redo iconic JTAG/RGH mod menu themes, thank you!💪🔥
 
 SPECIAL MENTION: @ShadowCat Who showed or search to do the rainbow function, thank you! 💪🔥
 
-SPECIAL MENTION: @Pxrallel  for giving me the original SVT font, thank you! :muscle: 💪🔥
+SPECIAL MENTION: @Pxrallel  for giving me the original SVT font, thank you! 💪🔥
 
 🚧🚧🚧🚧🚧🚧🚧🚧
 
