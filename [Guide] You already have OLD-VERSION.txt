@@ -1,0 +1,27 @@
+⚠️⚠️ -> If you already have the correct OLD VESION choose UNISTALL METHOD:
+
+----------------------------------->SEMI-AUTOMATIC UNISTALL
+💎->STEP 1 Extract Unistall-V0.2.bat and Launch
+
+🚧🚧🚧🚧🚧🚧🚧
+🐍-->STEP 2 : Drop  .PLUTO in : \AppData\Roaming\Stand\Lua Scripts
+
+🚧🚧🚧🚧🚧🚧🚧
+🦖--->STEP 3 : Drop #xfes-lib-theme folder in the \AppData\Roaming\Stand\Lua Scripts\resources 
+->⚠️⚠️ If the #xfes-lib-theme folder is already present in your folders then drop Superior V in:   \AppData\Roaming\Stand\Lua Scripts\resources\#xfes-lib-theme folder ⚠️⚠️
+
+🚧🚧🚧🚧🚧🚧🚧
+✨---->STEP 4: Enjoy your theme Update Finish☀️
+
+-----------------------------------> Manualy UNISTALL
+💎->STEP 1 Delete OLD Lua and replace lateste .PLUTO in : \AppData\Roaming\Stand\Lua Scripts
+
+🚧🚧🚧🚧🚧🚧🚧
+🐍-->STEP 2 : Delete the old Superior V file in : \AppData\Roaming\Stand\Lua Scripts\resources 
+
+🚧🚧🚧🚧🚧🚧🚧
+🦖--->STEP 3 : Drop #xfes-lib-theme folder in the \AppData\Roaming\Stand\Lua Scripts\resources 
+->⚠️⚠️ If the #xfes-lib-theme folder is already present in your folders then drop Superior V in:   \AppData\Roaming\Stand\Lua Scripts\resources\#xfes-lib-theme folder ⚠️⚠️
+
+🚧🚧🚧🚧🚧🚧🚧
+✨---->STEP 4: Enjoy your theme Update Finish☀️

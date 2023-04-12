@@ -1,0 +1,15 @@
+🦖 Update 0.2 :
+[x]-> Adding Orignal Font ( @Pxrallel#2330  for giving me the original SVT font, thank you!)🔥🧨
+
+🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
+
+🐉 Update 0.3 :
+Minor FEATURE :
+[x]->Shortcut Mousse Support Adding ->(at the request of @Wolfgang)🔥🧨
+[x]->Shortcut Cursor Bar Setting  👌
+
+MAJOR Update:
+
+[x]->Centralization of resource files for my JTAG/RGH themes👌
+⚠️ It will save you from having 300 files in your luascript/resource file, all my themes will be in a single file.)😉
+(Now SVT and Legacy are in the same file)✅

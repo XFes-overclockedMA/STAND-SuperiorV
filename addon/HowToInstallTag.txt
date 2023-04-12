@@ -1,0 +1,31 @@
+💎->Import in your profile it is the line if below be careful in your profile there must not already be the mention:
+--> Players/settings/Tags if it is the case replace it by the line if below. ✅
+
+--------------------------
+
+
+
+Players
+	Settings
+		Tags
+			Brackets: STD
+			Self: 
+			Friend: 
+			Crew Member: 
+			In Timeout: 
+			Modder: 
+			Admin: 
+			Likely Modder: 
+			Attacked You: 
+			Host: 
+			Next Host: 
+			Script Host: 
+			Invulnerable: 
+			Indestructible Vehicle: 
+			RC Vehicle: 
+			Off The Radar: 
+			In An Interior: 
+			Spectating: 
+			Typing: 
+			Dead: 
+			VPN: 

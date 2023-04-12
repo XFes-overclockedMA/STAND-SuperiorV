@@ -1,0 +1,1 @@
+explorer.exe C:\Users\%USERNAME%\AppData\Roaming\Stand

@@ -1,0 +1,307 @@
+------------------------------------------------------------------------------------------------------------------------------
+--                                                                                                                          --
+--Version:                                                                                                                  --
+--0.3                                                                                                                       --
+--Build Date:                                                                                                               --
+--14/11/23                                                                                                                  --
+-----powered By = разогнанный = OverclockedMA                                                                               --
+------------------------------------------------------------------------------------------------------------------------------
+-- SUPERIOR V <3                                                                                                            --
+-- Welcome on my CODE                                                                                                       --  
+-- This OPEN SOURCE PROVIDED YOU MENTION ME IN YOUR PROJECTS                                                                --  
+--> Thanks :) <3                                                                                                            --
+------------------------------------------------------------------------------------------------------------------------------
+
+util.keep_running() 
+util.require_natives("natives-1676318796")
+-----------------------------------------------------------------------------------------------------------------------------------
+---------------RESOURCES SVT
+local footer_path = filesystem.resources_dir() .. 'SuperiorV\\Footer.png'
+local load_path = filesystem.resources_dir() .. '#xfes-lib-theme\\SuperiorV\\loading\\svtload.png'
+local loadachivement_path = filesystem.resources_dir() .. '#xfes-lib-theme\\SuperiorV\\loading\\loadachivement.png'
+local header_path = filesystem.resources_dir() .. '#xfes-lib-theme\\SuperiorV\\Header.png'
+local headers_path = filesystem.resources_dir() .. '#xfes-lib-theme\\SuperiorV\\Header1.png'
+local footer_path = filesystem.resources_dir() .. '#xfes-lib-theme\\SuperiorV\\Footer.png'
+local header = directx.create_texture(header_path)
+local footer = directx.create_texture(footer_path)
+local headers = directx.create_texture(headers_path)
+-----------------------------------------------------------------------------------------------
+---------------CHECK FILE SVT
+if not io.exists(load_path) then
+    util.toast('[SuperiorV] SuperiorV #xfes-lib-theme\\SuperiorV\\loading\\svtload.png not found!')
+   util.stop_script()
+end
+
+if not io.exists(loadachivement_path) then
+    util.toast('[SuperiorV] SuperiorV #xfes-lib-theme\\SuperiorV\\loading\\loadachivement.png not found!')
+   util.stop_script()
+end
+
+if not io.exists(header_path) then
+    util.toast('[SuperiorV] SuperiorV #xfes-lib-theme\\SuperiorV\\Header.png not found!')
+    util.stop_script()
+end
+
+if not io.exists(headers_path) then
+    util.toast('[SuperiorV] SuperiorV #xfes-lib-theme\\SuperiorV\\Header1.png not found!')
+    util.stop_script()
+end
+
+
+if not io.exists(footer_path) then
+   util.toast('[SuperiorV] SuperiorV #xfes-lib-theme\\SuperiorV\\Footer.png not found!')
+  util.stop_script()
+end
+
+-----------------------------------------------------------------------------------------------
+---------------NOTIFY LAUNCH SVT.PLUTO
+util.toast("Hi, " .. players.get_name(players.user()) .. "! \nWelcome To Superior V - Theme")
+
+-----------------------------------------------------------------------------------------------
+---------------SPLASH SCREEN REPERTORY
+HC_DIR = filesystem.resources_dir() .. "#xfes-lib-theme\\SuperiorV\\"
+svtloading = {
+    Img = HC_DIR .. "loading\\",
+}
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- LOAD SPLASH IMG
+function SHOW_IMG(img_name, max_passed_time)----------------------------------------------Credit goes to LanceScript Reloaded (THANKS, LanceScript Team :) <3 )
+    if filesystem.exists(svtloading.Img .. img_name) then
+        local ImgAlpha = 0
+        local IncreasedImgAlpha = 0.01
+        util.create_tick_handler(function()
+            ImgAlpha = ImgAlpha + IncreasedImgAlpha
+            if ImgAlpha > 1 then
+                ImgAlpha = 1
+            elseif ImgAlpha < 0 then 
+                ImgAlpha = 0
+                return false
+            end
+        end)
+
+        local Img = directx.create_texture(svtloading.Img .. img_name)
+        local StartedTime = os.clock()
+        util.create_tick_handler(function()
+            directx.draw_texture(Img, 0.07, 0.07, 0.5, 0.5, 0.5, 0.5, 0, 1, 1, 1, ImgAlpha)
+            local PassedTime = os.clock() - StartedTime
+            if PassedTime > max_passed_time then
+                IncreasedImgAlpha = -0.01
+            end
+            if ImgAlpha == 0 then
+                return false
+            end
+        end)
+    end
+end
+
+if SCRIPT_MANUAL_START and not SCRIPT_SILENT_START then
+    SHOW_IMG("svtload.png", 3.0)
+    GRAPHICS.ANIMPOSTFX_PLAY("FocusOut", 0, 0)
+end
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- LOAD XBOX AC
+function SHOW_IMG(img_name, max_passed_time)----------------------------------------------Credit goes to LanceScript Reloaded (THANKS, LanceScript Team :) <3 )
+    if filesystem.exists(svtloading.Img .. img_name) then
+        local ImgAlpha = 0
+        local IncreasedImgAlpha = 0.01
+        util.create_tick_handler(function()
+            ImgAlpha = ImgAlpha + IncreasedImgAlpha
+            if ImgAlpha > 1 then
+                ImgAlpha = 1
+            elseif ImgAlpha < 0 then 
+                ImgAlpha = 0
+                return false
+            end
+        end)
+
+        local Img = directx.create_texture(svtloading.Img .. img_name)
+        local StartedTime = os.clock()
+        util.create_tick_handler(function()
+            directx.draw_texture(Img, 0.07, 0.05, 1.5, 4.8, 0.5, 0.5, 0, 1, 1, 1, ImgAlpha)
+            local PassedTime = os.clock() - StartedTime
+            if PassedTime > max_passed_time then
+                IncreasedImgAlpha = -0.01
+            end
+            if ImgAlpha == 0 then
+                return false
+            end
+        end)
+    end
+end
+
+if SCRIPT_MANUAL_START and not SCRIPT_SILENT_START then
+    SHOW_IMG("loadachivement.png", 3.0)
+    
+end
+-----------------------------------------------------------------------------------------------------------------------------------
+---------------Profile Stand.LUA
+----------------------------------------------COLOURS
+menu.trigger_commands("primary BCBCBCFF")
+menu.trigger_commands("focustext 000000FF")
+menu.trigger_commands("focusrighttext 000000FF")
+menu.trigger_commands("focustexture 000000FF")
+menu.trigger_commands("backgroundopacity 200")
+menu.trigger_commands("background 030403C8")
+----------------------------------------------POSITION
+menu.trigger_commands("menux 1429")
+menu.trigger_commands("menuy 172")
+----------------------------------------------ADRESSE BAR
+menu.trigger_commands("addressbar off")
+menu.trigger_commands("cursorpos on")
+----------------------------------------------TABS
+menu.trigger_commands("tabs on")
+menu.trigger_commands("tabswidth 49")
+menu.trigger_commands("tabsheight 5")
+menu.trigger_commands("tabsposition top")
+menu.trigger_commands("tabstextscale 11")
+menu.trigger_commands("tabstextyoffset 5")
+menu.trigger_commands("tabsalignment centre")
+menu.trigger_commands("tabsname off")
+----------------------------------------------SCROLLBAR 
+----------------------------------------------SCROLLBAR DISABLED MANUALY BEACEAUSE COMMAND NOT FOUND... 
+menu.trigger_commands("scrollbarwidth 10")
+----------------------------------------------APPEARANCE MAIN 
+menu.trigger_commands("menuheight 12")
+menu.trigger_commands("listwidth 343")
+menu.trigger_commands("listheight 34")
+menu.trigger_commands("spacersize 0")
+menu.trigger_commands("smoothscroll 110")
+menu.trigger_commands("blur 1")
+----------------------------------------------NOTIFICATIONS 
+menu.trigger_commands("notifyborder 19C1FFFF")
+menu.trigger_commands("notifyflash 19C1FFFF")
+menu.trigger_commands("notifybg 030403DC")
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- DIVIDER HEADER
+menu.divider(menu.my_root(), ("SuperiorV - Setting"))
+menu.divider(menu.my_root(), ("Font - Header"))
+TitleC = menu.slider(menu.my_root(), ("Title Custom"), {"svttitle"}, "Customize Font Title", 0, 1, 0, 1, function(); end)
+menu.divider(menu.my_root(), ("RGB - Header Color"))
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- STRING COLOR HEADER
+rect_colour = {
+	["r"] = 3/255,
+	["g"] = 4/255,
+	["b"] = 3/255,
+	["a"] = 0.922
+}
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- MENU CUSTOM STV COLOR
+c = menu.colour(menu.my_root(), "SVT Header Custom Color", {"dxrectheader"}, "Customize the color of the theme to have a menu that looks like you.", rect_colour, true, function(colour)
+	rect_colour = colour
+end)
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- DIVIDER RAINBOW OPTION
+menu.divider(menu.my_root(), ("Rainbow - Header Mod"))
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- RESET RGB MOD
+menu.action(menu.my_root(), "RESET for RGB mod", {}, "How to use: Press the button to take advantage of the RGB mod below (!Only if you have the ORIGINAL SVT COLOR!) !! Note: If after the **RESET for RGB MOD** the colors does not scroll, unload Stand.", function()
+    util.toast("[SVT] - RESET Header for RGB mod applied.")
+    menu.trigger_commands("dxrectheaderblue 255")
+end)
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- RAINBOW BTN
+menu.rainbow(c)
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- FOOTER DIVIDER
+menu.divider(menu.my_root(), ("RGB - Footer Color"))
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- STRING COLOR FOOTER
+rect_colourF = {
+	["r"] = 3/255,
+	["g"] = 4/255,
+	["b"] = 3/255,
+	["a"] = 0.785
+}
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- FOOTER BTN CUSTOM COOR 
+f = menu.colour(menu.my_root(), "SVT Footer Custom Color", {"dxrectfooter"}, "Customize the color of the theme to have a menu that looks like you.", rect_colourF, true, function(colour)
+	rect_colourF = colour
+end)
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- RAINBOW FOOTER MOD
+menu.divider(menu.my_root(), ("Rainbow - Footer Mod"))
+
+-----------------------------------------------------------------------------------------------------------------------------------
+---------------RESET COLOR FOOTER FOR RGB MOD
+menu.action(menu.my_root(), "RESET for RGB mod", {}, "How to use: Press the button to take advantage of the RGB mod below (!Only if you have the ORIGINAL SVT COLOR!) !! Note: If after the **RESET for RGB MOD** the colors does not scroll, unload Stand.", function()
+    util.toast("[SVT] - RESET Footer for RGB mod applied.")
+    menu.trigger_commands("dxrectfooterblue 255")
+end)
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- RAINBOW FOOTER
+menu.rainbow(f)
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- DIVIDER Click UI
+menu.divider(menu.my_root(), ("Stand Setting"))
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- SEARCH MOUSE SETTINGS
+menu.action(menu.my_root(), "Mouse Support ", {}, "Shortcut to the settings for the Mouse Support.", function(on_click)
+    menu.trigger_commands("search Mouse Support")
+ end)
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- SEARCH CURSOR SETTING
+ menu.action(menu.my_root(), "Cursor Bar", {}, "Shortcut to the settings for the overlay.", function(on_click)
+ util.toast("[SVT] - Stand>Settings>Appearance and colors>Primary.")
+menu.focus(menu.ref_by_path("Stand>Settings>Appearance"), function() end)
+end)
+--------------- DIVIDER RESET OPTION
+menu.divider(menu.my_root(), ("Reset"))
+-----------------------------------------------------------------------------------------------------------------------
+--------------- RESET COLOR SVT BTN
+menu.action(menu.my_root(), "SVT Orignal Color", {}, "Reset color to have the original color.", function()
+    util.toast("[SVT] - Original color well applied.")
+    menu.trigger_commands("backgroundopacity 200")
+    menu.trigger_commands("background 030403C8")
+    menu.trigger_commands("dxrectheaderrainbow 0")
+    menu.trigger_commands("dxrectheaderopacity 235")
+    menu.trigger_commands("dxrectheaderred 3")
+    menu.trigger_commands("dxrectheadergreen 4")
+    menu.trigger_commands("dxrectheaderblue 3")
+    menu.trigger_commands("dxrectfooterrainbow 0")
+    menu.trigger_commands("dxrectfooteropacity 200")
+    menu.trigger_commands("dxrectfooterred 3")
+    menu.trigger_commands("dxrectfootergreen 4")
+    menu.trigger_commands("dxrectfooterblue 3")
+  
+end)
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- DIVISER FOOTER
+HC_VERSION = "V0.3"
+menu.divider(menu.my_root(), ("By XFes-OverclockedMA") .. " " .. HC_VERSION)
+-----------------------------------------------------------------------------------------------------------------------------------
+--------------- DRAW TEXTURE
+while true do
+    if menu.is_open() then
+        x, y, w, h = menu.get_main_view_position_and_size()
+
+----------------------------------------------BACK HEADER
+directx.draw_rect(    
+x,				 -- x
+y - (80 / 1080), -- y
+w,				 -- width
+80 / 1080,		 -- height
+rect_colour		 -- colour
+)
+       
+----------------------------------------------SUPERIOR TITLE VARIABLE
+      rb = menu.get_value(TitleC)
+      if rb  == 1 then 
+       directx.draw_texture(headers, 1, (81 / 1080) / 2, 0, 0, x, y - 80 / 1080, 0, 1, 1, 1, 1) 
+      else 
+       directx.draw_texture(header, 1, (81 / 1080) / 2, 0, 0, x, y - 80 / 1080, 0, 1, 1, 1, 1)
+      end
+----------------------------------------------FOOTER WHITE
+        directx.draw_rect(x, y + h - (1 / 1080), w, (5 / 1080), { r =200/255, g = 200/255, b = 200/255, a = 255/255  })
+----------------------------------------------FOOTER BLACK
+       directx.draw_rect(x, y + h + 02.9 / 1080, w, 23 / 1080, rect_colourF)
+----------------------------------------------ACTIVE CURSOR LIST
+        directx.draw_text(x + (w /1.07), y + h + (14 / 1080), menu.get_active_list_cursor_text(), ALIGN_CENTRE, 0.644, { r = 200/255, g = 200/255, b = 200/255, a = 255/255 }, false)
+---------------------------------------------- FOOTER SCROLL
+      directx.draw_texture(footer, 1, (29.5 / 1080) / 2, 0, 0, x, y + h - (0.8 / 1080), 0, 1, 1, 1, 1) 
+    end
+    util.yield()
+end
+
+
+

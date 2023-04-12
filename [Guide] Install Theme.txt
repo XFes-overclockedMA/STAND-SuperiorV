@@ -1,0 +1,15 @@
+💎->STEP 1 Drop .PLUTO in the :  \AppData\Roaming\Stand\Lua Scripts
+
+🚧🚧🚧🚧🚧🚧🚧
+🐍-->STEP 2 : Drop #xfes-lib-theme folder in the \AppData\Roaming\Stand\Lua Scripts\resources 
+->⚠️⚠️ If the #xfes-lib-theme folder is already present in your folders then drop Superior V in:   \AppData\Roaming\Stand\Lua Scripts\resources\#xfes-lib-theme folder ⚠️⚠️
+
+🚧🚧🚧🚧🚧🚧🚧
+🦖--->STEP 3 : Drop the theme file in the : \AppData\Roaming\Stand\Theme
+
+🚧🚧🚧🚧🚧🚧🚧
+✨---->STEP 4: Enjoy your theme ☀️
+
+🚧🚧🚧🚧🚧🚧🚧
+Optional:
+-> To add tags refer to the addon file. ✅
